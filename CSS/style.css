@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #fefefe;
+    font-size: 25px;
+    padding-left: 0.75rem;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0px -14px 20px 0px;
+}
+
+nav div{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    width: 250px;
+    text-align: center;
+    min-width: fit-content;
+}
+
+.m-item a{
+    transition: font-size 0.25s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.m-item:hover{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.d-item:hover{
+    background-color: #fafafa;
+}
+
+.fill{
+    flex-grow: 1;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    padding: 1.25rem;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu:hover .dropdown{
+    display: flex;
+}
+
+.dropdown{
+    position: absolute;
+    top: calc(33px + 2.75rem);
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    padding: 0px;
+    display: none;
+}
+
+.d-item{
+    background-color: #fefefe;
+    padding: 1rem;
+    min-width: 100%;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    padding: 3rem;
+    background-color: deepskyblue;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+}
+
+#links a{
+    display: block;
+    text-decoration: underline;
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-align: end;
+}
+
+#links:last-child{
+    margin-bottom: 0px;
+}
+
+#links{
+    width: 25%;
+}
+
+#address{
+    width: 30%;
+    font-size: 27px;
+    text-align: center;
+}
+
+#address p{
+    font-weight: bold;
+    font-size: 31px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#sm{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sm-cont{
+    width: 100%;
+    text-align: center;
+}
+
+#sm-cont a{
+    font-size: 22px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+#copyright{
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 900px){
+    footer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    #links{
+        width: 45%;
+    }
+    
+    #address{
+        width: 45%;
+        font-size: 21px;
+    }
+    
+    #address p{
+        font-size: 26px;
+    }
+    
+    #copyright{
+        font-size: 19px;
+    }
+    
+    #sm{
+        width: 80%;
+        margin-top: 2.5rem;
+    }
+    
+    #links a{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    #links, #sm, #address{
+        width: 95%;
+    }
+}
+
+.mb #links, .mb #sm, .mb #address{
+    width: 95%;
+    text-align: center;
+}
+
+.mb footer{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mb #links a{
+    text-align: center;
+    font-size: 40px;
+}
+
+.mb #address{
+    margin-top: 2rem;
+    font-size: 42px;
+}
+
+.mb #address p{
+    font-size: 55px;
+}
+
+.mb #sm-cont a{
+    font-size: 50px;
+}
+
+.mb #sm{
+    margin-top: 2rem;
+}
+
+.mb #copyright{
+    font-size: 45px;
+}
+
+.mb nav{
+    font-size: 60px;
+}
+
+.mb nav #title{
+    font-size: 70px;
+    padding: 2rem;
+}
+
+.mb #about, .mb #contact{
+    display: none;
+}
+
+.mb .dropdown{
+    top: calc(75px + 4rem);
+}
+
+.mb #home:hover{
+    font-size: 65px;
+}
+
+.mb #home{
+    padding: 0rem 4rem;
+}
+
+.mb .d-item{
+    font-size: 55px;
+}

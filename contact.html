@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/breadcrumb.css">
+    <link rel="stylesheet" href="CSS/contactcontent.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap" defer></script>
+    <script>
+        function initMap(){
+            const bengaluru = { lat: 12.9716, lng: 77.5946 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 6,
+              center: bengaluru
+            });
+            const marker = new google.maps.Marker({
+                position: bengaluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="title"><a href="index.html">My Website</a></div>
+        <div class="fill"></div>
+        <div class="submenu m-item" id="home">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <div class="d-item">Submenu 1</div>
+                <div class="d-item">Submenu 2</div>
+                <div class="d-item">Submenu 3</div>
+            </div>
+        </div>
+        <div class="m-item" id="about">
+            <a href="about.html">About</a>
+        </div>
+        <div class="m-item" id="contact" style="background-color: #eeeeee">
+            <a href="contact.html">Contact us</a>
+        </div>
+    </nav>
+    <div id="topCont" class="contact">
+        <div id="top">
+            <div id="pageTitle">Contact Us</div>   
+            <div id="breadcrumd">
+                <a href="index.html">Home</a> / <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="contentBox" id="map"></div>
+        <div class="contentBox" id="form">
+            <form action="https://formspree.io/f/xrgorgee" name="feedbackForm" method="POST">
+                <input type="text" name="userName" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="phone" placeholder="Phone number" maxlength="10" minlength="10" required id="phone">
+                <textarea name="message" placeholder="Message" rows="7" required></textarea>
+                <input type="submit" value="Submit" onclick="validate(event)">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="address">
+            <p>Sample Address : </p>
+            5th Avenue Street, <br>
+            New York, USA
+        </div>
+        <div id="sm">
+            <div id="sm-cont">
+                <a href="https://linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://youtube.com" class="fa fa-youtube" target="_blank"></a>
+            </div>
+            <div id="copyright">&copy;2021 Sample Company</div>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="JS/validate.js"></script>
+    <script>
+        const tHeight = window.innerHeight;
+        const mHeight = 
+parseInt(window.getComputedStyle(document.getElementsByTagName("nav")[0]).height);
+        document.getElementById("topCont").style.height = `${tHeight - mHeight}px`;
+    </script>
+
+</body>
+</html>

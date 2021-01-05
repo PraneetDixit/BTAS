@@ -1,0 +1,117 @@
+#carousel{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    z-index: 5;
+}
+
+#imgCont{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+    position: absolute;
+}
+
+#imgCont::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+#imgCont::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+#imgCont::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.img{
+    height: 100%;
+    flex: 0 0 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#i1{
+    background-image: url(../Img/img1.jpg);
+}
+
+#i2{
+    background-image: url(../Img/img2.jpg);
+}
+#i3{
+    background-image: url(../Img/img3.jpg);
+}
+#i4{
+    background-image: url(../Img/img4.jpg);
+}
+
+.desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 1.5rem 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+}
+
+.controls{
+    font-size: 28px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    border-radius: 50%;
+/*    display: block;*/
+    width: 4.5rem;
+    position: absolute;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45%;
+    border: none;
+    outline: none;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+#carousel:hover .controls{
+    opacity: 1;
+}
+
+.controls:active{
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+#back{
+    left: 2.5rem;
+}
+
+#forward{
+    right: 2.5rem;
+}
+
+@media only screen and (max-width: 500px){
+    .desc{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.mb .desc{
+    margin: 0;
+    width: 100%;
+    font-size: 45px;
+}
+
+.mb .controls{
+    font-size: 45px;
+    padding: 3rem;
+}

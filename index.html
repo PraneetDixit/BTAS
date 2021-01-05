@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/content.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div id="title"><a href="index.html">My Website</a></div>
+        <div class="fill"></div>
+        <div class="submenu m-item" id="home" style="background-color: #eeeeee">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <div class="d-item">Submenu 1</div>
+                <div class="d-item">Submenu 2</div>
+                <div class="d-item">Submenu 3</div>
+            </div>
+        </div>
+        <div class="m-item" id="about"><a href="about.html">About</a></div>
+        <div class="m-item" id="contact"><a href="contact.html">Contact us</a></div>
+    </nav>
+    <div id="carousel">
+        <div id="imgCont">
+            <div id="i1" class="img">
+                <div class="desc">Sample text 1 goes on here ...................<br> Some more sample text here ..........<br> Some more sample text here ..........</div>
+            </div>
+            <div id="i2" class="img">
+                <div class="desc">Sample text 2 goes on here ...................<br> Some more sample text here ..........<br> Some more sample text here ..........</div>
+            </div>
+            <div id="i3" class="img">
+                <div class="desc">Sample text 3 goes on here ...................<br> Some more sample text here ..........<br> Some more sample text here ..........</div>
+            </div>
+            <div id="i4" class="img">
+                <div class="desc">Sample text 4 goes on here ...................<br> Some more sample text here ..........<br> Some more sample text here ..........</div>
+            </div>
+        </div>
+        <button class="controls" id="back">&lt;</button>
+        <button class="controls" id="forward">&gt;</button>
+    </div>
+    <div id="content">
+        <div class="contentBox" id="cb1">
+            <div class="content-i"></div>
+            <div class="content-d">
+                <p>Service 1</p>
+                Description of Service 1 goes on here ....
+                <a href="#">Url 1</a>
+            </div>
+        </div>
+        <div class="contentBox" id="cb2">
+            <div class="content-i"></div>
+            <div class="content-d">
+                <p>Service 2</p>
+                Description of Service 2 goes on here ....
+                <a href="#">Url 2</a>
+            </div>
+        </div>
+        <div class="contentBox" id="cb3">
+            <div class="content-i"></div>
+            <div class="content-d">
+                <p>Service 3</p>
+                Description of Service 3 goes on here ....
+                <a href="#">Url 3</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="address">
+            <p>Sample Address : </p>
+            5th Avenue Street, <br>
+            New York, USA
+        </div>
+        <div id="sm">
+            <div id="sm-cont">
+                <a href="https://linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://youtube.com" class="fa fa-youtube" target="_blank"></a>
+            </div>
+            <div id="copyright">&copy;2021 Sample Company</div>
+        </div>
+    </footer>
+    <div id="popupCont">
+        <div id="popup">
+            <div id="bar"><span id="cross">&times;</span></div>
+            <div id="popupMsg">Welcome to my site<br>Sample popup</div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+    <script src="JS/carousel.js"></script>
+    <script>
+        document.getElementById("cross").addEventListener("click", function(){
+            document.getElementById("popupCont").style.display = "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/breadcrumb.css">
+    <link rel="stylesheet" href="CSS/aboutcontent.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div id="title"><a href="/index.html">My Website</a></div>
+        <div class="fill"></div>
+        <div class="submenu m-item" id="home">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <div class="d-item">Submenu 1</div>
+                <div class="d-item">Submenu 2</div>
+                <div class="d-item">Submenu 3</div>
+            </div>
+        </div>
+        <div class="m-item" id="about" style="background-color: #eeeeee">
+            <a href="about.html">About</a>
+        </div>
+        <div class="m-item" id="contact">
+            <a href="contact.html">Contact us</a>
+        </div>
+    </nav>
+    <div id="topCont" class="about">
+        <div id="top">
+            <div id="pageTitle">About</div>   
+            <div id="breadcrumb">
+                <a href="index.html">Home</a> / <a href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="contentBox" id="info">
+            <h1>About company</h1>
+            <p>Sample text about the company goes on here.<br> The company is a well known company in the  field in Information and Technology sector. We provide world class web development services. <br>Our clients include following companies ... <br> We are specialized in the following technologies .....</p>
+        </div>
+        <div class="contentBox" id="image"></div>
+    </div>
+    <footer>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="address">
+            <p>Sample Address : </p>
+            5th Avenue Street, <br>
+            New York, USA
+        </div>
+        <div id="sm">
+            <div id="sm-cont">
+                <a href="https://linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://youtube.com" class="fa fa-youtube" target="_blank"></a>
+            </div>
+            <div id="copyright">&copy;2021 Sample Company</div>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script>
+        const tHeight = window.innerHeight;
+        const mHeight = 
+parseInt(window.getComputedStyle(document.getElementsByTagName("nav")[0]).height);
+        document.getElementById("topCont").style.height = `${tHeight - mHeight}px`;
+    </script>
+</body>
+</html>

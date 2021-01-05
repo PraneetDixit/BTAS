@@ -1,0 +1,102 @@
+#content{
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentBox{
+    overflow: hidden;
+    width: 30%;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#cb1{
+    background-color: #2a9d8f;    
+}
+
+#cb2{
+    background-color: #F4A261;
+}
+
+#cb3{
+    background-color: #E76F51;
+}
+
+.content-i{
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cb1 .content-i{
+    background-image: url(../Img/service1.jpg);
+}
+
+#cb2 .content-i{
+    background-image: url(../Img/service2.jpg);
+}
+
+#cb3 .content-i{
+    background-image: url(../Img/service3.jpg);
+}
+
+.content-d{
+    padding: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.content-d p{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.content-d a{
+    display: block;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px){
+    #content{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .contentBox{
+        width: 45%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .contentBox{
+        width: 95%;
+    }
+}
+
+.mb .contentBox{
+    width: 95%;
+    height: 1000px;
+    margin-bottom: 5rem;
+}
+
+.mb #content{
+    flex-wrap: wrap;
+}
+
+.mb .content-i{
+    height: 700px;
+}
+
+.mb .content-d{
+    font-size: 45px;
+}
+
+.mb .content-d p{
+    font-size: 50px;
+}

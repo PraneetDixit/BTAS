@@ -1,0 +1,44 @@
+#popupCont{
+    min-height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1500;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup{
+    min-height: 70vh;
+    min-width: 70%;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bar{
+    padding: 0.5rem 2rem;
+    text-align: end;
+    font-size: 70px;
+    color: #212121;
+    font-weight: bold;
+}
+
+#popupMsg{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5.5rem;
+}
+
+#cross{
+    cursor: pointer;
+}

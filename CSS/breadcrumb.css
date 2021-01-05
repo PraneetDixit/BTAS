@@ -1,0 +1,56 @@
+#top{
+    font-family: 'Montserrat',sans-serif;
+    padding: 2rem 15rem 2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0rem 0rem 3rem 3rem;
+}
+
+#pageTitle{
+    font-size: 2.5rem;
+}
+
+#top a{
+    color: darkblue;
+    font-size: 22px;
+}
+
+.about{
+    background-image: url(../Img/about.jpg);
+}
+
+.contact{
+    background-image: url(../Img/contact.jpg);
+}
+
+#topCont{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 500px){
+    #top{
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+.mb #top{
+    margin: 0px;
+    width: 100%;
+}
+
+.mb #pageTitle{
+    font-size: 75px;
+}
+
+.mb #top a{
+    font-size: 55px;
+}
+
+.mb #breadcrumb{
+    font-size: 55px;
+}

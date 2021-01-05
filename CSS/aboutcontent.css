@@ -1,0 +1,84 @@
+#content{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contentBox{
+    width: 40%;
+    height: 500px;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info p{
+    font-size: 24px;
+}
+
+#info h1{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#image{
+    background-image: url(../Img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 950px){
+    #info h1{
+        font-size: 32px;
+    }
+    
+    #info p{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .contentBox{
+        width: 85%;
+        height: fit-content;
+    }
+    
+    #content{
+        flex-wrap: wrap;
+    }
+    
+    #info{
+        margin-bottom: 2.5rem;
+    }
+    
+    #image{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .contentBox{
+        width: 95%;
+    }
+}
+
+.mb #content{
+    flex-wrap: wrap;
+}
+
+.mb .contentBox{
+    width: 95%;
+}
+
+.mb .contentBox:first-of-type{
+    height: fit-content;
+}
+
+.mb #info p{
+    font-size: 45px;
+}
+
+.mb #info h1{
+    font-size: 55px;
+}
